@@ -1,0 +1,183 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.header-wrapper {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.content-wrapper {
+	margin: 0 10px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	padding: 8px;
+	text-align: center;
+}
+
+.main-nav li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	text-align: center;
+	padding: 40px 0;
+	margin-bottom: 30px;
+}
+
+.main-footer {
+	text-align: center;
+	background: #d9e4ea;
+	padding: 2em 0;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.wrap {
+	min-height: calc(100vh - 164px);
+}
+
+.header-wrapper,
+.content-wrapper {
+	width: 80%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.name,
+.main-nav li {
+	float: left;
+}
+
+.main-nav {
+	float: right;
+}
+
+.main-nav li {
+	margin-left: 12px;
+}
+
+.col {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.secondary {
+	width: 50%;
+}
+
+.primary {
+	width: 50%;
+}
+
+.feat-img {
+	float: left;
+	width: 500px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px 10px 10px;
+}
+
+@media (min-width: 1025px) {
+
+.primary {
+	width: 40%;
+}
+
+.secondary {
+	width: 30%;
+}
+
+.tertiary {
+	width: 30%;
+}
+
+
+
+}
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
