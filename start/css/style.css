@@ -105,8 +105,20 @@ img {
 
 @media (min-width: 769px) {
 
+body {
+	padding-top: 74.78px;
+}
+
 .wrap {
 	min-height: calc(100vh - 164px);
+}
+
+.main-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	background: white;
 }
 
 .header-wrapper,
@@ -166,11 +178,7 @@ img {
 	width: 30%;
 }
 
-
-
 }
-
-
 
 	/* ---- Float clearfix ---- */
 
